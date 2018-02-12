@@ -12,6 +12,13 @@ Please run the following command to prepare the input data.
 
 Jupyter notebook to develop Headpose Estimator CNN model using Apache MXNet. 
 
+## HeadPose_SageMaker_PythonSDK
+
+A set of SageMaker notebook and entry point script to repeat the development of Headpose Estimator model. 
+
+* HeadPose_SageMaker_PySDK.ipynb 
+* EntryPt-headpose.py 
+* EntryPt-headpose-wo-cv2.py
 
 ## testIMs
 
