@@ -16,14 +16,11 @@ Jupyter notebook to develop Headpose Estimator CNN model using Apache MXNet.
 
 A set of SageMaker notebook and entry point script to develop the Headpose Estimator model on Amazon SageMaker. 
 
-* HeadPose_SageMaker_PySDK.ipynb
-SageMaker notebook to invoke an entry point python script. 
+* **HeadPose_SageMaker_PySDK.ipynb:** SageMaker notebook to invoke an entry point python script. 
 
-* EntryPt-headpose.py
-An entry point python script to train Headpose Estimator model. This entry point script is analogous to HeadPose_ResNet50_Tutorial.ipynb.
+* **EntryPt-headpose.py:** An entry point python script to train Headpose Estimator model. This entry point script is analogous to HeadPose_ResNet50_Tutorial.ipynb.
  
-* EntryPt-headpose-wo-cv2.py
-This entry point script without cv2. 
+* **EntryPt-headpose-wo-cv2.py:** The entry point script without cv2. 
 
 ## testIMs
 
