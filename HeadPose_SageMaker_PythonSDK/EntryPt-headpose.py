@@ -69,8 +69,8 @@ class EvalCallback(object):
 #cv2 is not supported in ml.m4 instance
 def shiftHSV(im, h_shift_lim=(-180, 180),
                  s_shift_lim=(-255, 255),
-                 v_shift_lim=(-255, 255), u=0.5):
-    if np.random.random() < u:
+                 v_shift_lim=(-255, 255), drop_p=0.5):
+    if np.random.random() < drop_p:
         im = cv2.cvtColor(im, cv2.COLOR_BGR2HSV)
         h, s, v = cv2.split(im)
         h_shift = np.random.uniform(h_shift_lim[0], h_shift_lim[1])
@@ -166,9 +166,9 @@ def train(channel_input_dirs, hyperparameters, hosts, num_cpus, num_gpus, output
         im_temp = trn_im[i0,:,:,:]
         im_temp = np.transpose(im_temp, (1,2,0)) * 255 #transposing and restoring the color
         im_temp = shiftHSV(im_temp,
-                           h_shift_lim=(-0.5, 0.5),
-                           s_shift_lim=(-0.5, 0.5),
-                           v_shift_lim=(-0.5, 0.5))
+                           h_shift_lim=(-0.1, 0.1),
+                           s_shift_lim=(-0.1, 0.1),
+                           v_shift_lim=(-0.1, 0.1))
         im_temp = np.transpose(im_temp, (2,0,1)) / 255 #transposing and restoring the color
         trn_im[i0,:,:,:] = im_temp
     
