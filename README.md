@@ -18,7 +18,7 @@ Jupyter notebook to develop Headpose Estimator CNN model using Gluon.
 
 ## HeadPose_SageMaker_PythonSDK
 
-A set of SageMaker notebook and entry point script to develop the Headpose Estimator model on Amazon SageMaker. 
+Two sets of SageMaker notebooks and entry point scripts to develop the Headpose Estimator model on Amazon SageMaker. 
 
 * **HeadPose_SageMaker_PySDK.ipynb:** SageMaker notebook to invoke an entry point python script. 
 
