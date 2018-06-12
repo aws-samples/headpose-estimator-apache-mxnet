@@ -32,6 +32,11 @@ Two sets of SageMaker notebooks and entry point scripts to develop the Headpose 
  
 * **EntryPt-headpose-Gluon-wo-cv2.py:** The entry point script without cv2. 
 
+* **tensorflow_resnet_headpose_for_deeplens.ipynb:** SageMaker notebook to invoke an TensorFlow entry point python script. 
+
+* **resnet_headpose.py:** The TensorFlow main entry point script used for training and hosting
+
+* **resnet_model_headpose.py:** TensorFlow ResNet model
 
 ## testIMs
 
